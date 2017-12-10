@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_title_bar" />
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="物业服务"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="23dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_more"
+            android:paddingRight="280dp"
+            android:onClick="onClick"
+            android:text="通知"
+            android:textSize="20dip" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="348dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_more"
+            android:paddingRight="200dip"
+            android:onClick="onClick"
+            android:text="租赁合同管理"
+            android:textSize="20dip" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="348dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/ic_more"-->
+        <!--android:paddingRight="240dip"-->
+        <!--android:onClick="onClick"-->
+        <!--android:text="水电信息"-->
+        <!--android:textSize="20dip" />-->
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="348dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_more"
+            android:paddingRight="240dip"
+            android:onClick="onClick"
+            android:text="缴费服务"
+            android:textSize="20dip" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="348dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_more"
+            android:paddingRight="200dip"
+            android:onClick="onClick"
+            android:text="报事保修服务"
+            android:textSize="20dip" />
+    </LinearLayout>
+</LinearLayout>

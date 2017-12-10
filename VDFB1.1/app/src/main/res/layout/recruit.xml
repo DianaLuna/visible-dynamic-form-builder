@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_title_bar" />
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="发布招聘信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView0"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="题目"-->
+        <!--android:textSize="24sp"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="      招聘岗位："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      招聘要求："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      薪资需求："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      面试时间："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      发布公司："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      面试地点："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="      联系方式："
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bluebutton"
+        android:text="确认发布"
+        android:textSize="25sp"
+        />
+
+</LinearLayout>

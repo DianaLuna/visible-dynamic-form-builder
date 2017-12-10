@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_title_bar" />
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户投诉"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="标题："
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/new_title"
+            android:layout_height="36dp"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/new_content"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:minLines="6"
+        android:hint="请输入内容（500字以内）"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_weight="0.32"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="0.68"
+        android:background="@drawable/bluebutton"
+        android:text="提交"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+</LinearLayout>
