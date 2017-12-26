@@ -47,7 +47,7 @@
         }
 
         .form-login input[type="password"] {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             width:350px;
             height:auto;
             background-image:url('login/icon/key.png');
@@ -59,18 +59,7 @@
             border-top-right-radius: 0;
         }
         
-        .form-login input[type="email"]{
-            margin-bottom: 20px;
-            width:350px;
-            height:auto;
-            background-image:url('login/icon/mail.png');
-            background-position-y:50%;
-            background-position-x:97%; 
-            background-repeat: no-repeat;
-            background-size: 25px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
+  
 
         .go{
             float:right;
@@ -100,9 +89,9 @@
             <form class="form-login">       
                 <input type="username" class="form-control" name="username" placeholder="User Name" required="" autofocus="" />
                 <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-                <input type="email" class="form-control" name="email" placeholder="Email Address" required=""/>
+               
                 <a class="lines"><img src="login/pic/3lines.png"/></a>   
-                <button class="Go" type="submit" ></button> 
+                <button class="Go" type="submit" onclick="location.href='register.html'" ></button> 
             </form>
           </div>
 

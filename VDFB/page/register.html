@@ -1,0 +1,170 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" Content="text/html;charset=utf-8">
+        <title>user register</title>
+        <style type="text/css">
+        body{
+            background-color: #d6d6d6;
+        }
+        .bg {
+            background: url('register/pic/background.jpg');
+            background-size: cover;
+            text-align: center;
+
+        }
+        .pic img{
+                width:200px;
+                margin-top:20px; 
+                height:auto;
+                margin-bottom:-50px;
+        }
+        .bg-blur {
+            float: left;
+            width: 100%;
+            height:100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+        .content{
+            background-color: #ffffff ;
+            background-color:rgba(255, 255, 255, 0.5);
+            margin:1% auto;    
+            width: 600px;
+            height:200px;
+           
+        }
+
+        .content-front {
+          position:absolute;
+          left: 100px;
+          right: 100px;
+          height:500px;
+          line-height: 20%;
+          text-align: center;
+          margin-top: 10%;
+        }
+
+        .wrapper {
+            margin-top: 0px;
+            margin-bottom: 80px;
+        }
+
+        .form-register {
+            max-width: 380px;
+            padding: 15px 35px 45px;
+            margin: 0 auto;
+        }
+
+        .form-register .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .form-register input[type="username"] {
+            margin-bottom: 10px;
+            margin-top:10px;
+            width:350px;
+            height:auto;
+            background-image:url('register/icon/user.png');
+            background-position-y:40%;
+            background-position-x:97%; 
+            background-repeat: no-repeat;
+            background-size: 23px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-register input[type="password"] {
+            margin-bottom: 10px;
+            width:350px;
+            height:auto;
+            background-image:url('register/icon/key.png');
+            background-position-y:40%;
+            background-position-x:97%; 
+            background-repeat: no-repeat;
+            background-size: 24px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .form-register input[type="confirmpassword"] {
+            margin-bottom: 10px;
+            width:350px;
+            height:auto;
+            background-image:url('register/icon/key.png');
+            background-position-y:40%;
+            background-position-x:97%; 
+            background-repeat: no-repeat;
+            background-size: 24px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+       .form-register input[type="email"]{
+            margin-bottom: 20px;
+            width:350px;
+            height:auto;
+            background-image:url('register/icon/mail.png');
+            background-position-y:50%;
+            background-position-x:97%; 
+            background-repeat: no-repeat;
+            background-size: 25px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }       
+  
+
+        .register{
+            float:right;
+            margin-right:30px;
+            width:123px;
+            height:40px;
+            background-image:url('register/icon/register_b.png');
+            background-size:100%;
+            box-shadow:1px 3px 0px #b6b5b5;
+        }
+        .back{
+            float:left;
+            margin-right:30px;
+            width:123px;
+            height:40px;
+            background-image:url('register/icon/back_b.png');
+            background-size:100%;
+            box-shadow:1px 3px 0px #b6b5b5;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="bg bg-blur"></div>
+        <div class="content content-front">
+            <div align="center">   
+                    <p class="pic">
+                            <img src="register/logo/welcome.png" alt="LOGO载入失败" title"LOGO"/>
+                    </p>
+            </div>
+            <div class="wrapper">
+                <form class="form-register">       
+                    <input type="username" class="form-control" name="username" placeholder="User Name" required="" autofocus="" />
+                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+                    <input type="confirmpassword" class="form-control" name="confirmpassword" placeholder="Confirm Password" required="" />      
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" required=""/>
+                    <button class="Back" type="back" onclick="location.href='register.html'"/></a>   
+                    <button class="Register" type="submit" ></button> 
+                </form>
+            </div>
+        </div>    
+    </body>
+</html>
