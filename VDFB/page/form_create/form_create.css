@@ -1,0 +1,67 @@
+    /* *{ margin:0; padding:0;overflow:hidden;} 
+    body{ height:100%;} */
+    .div_head {
+        width           :100%;
+        height          :60px;
+        position        :absolute;
+        top             :0px;
+        left            :0px;
+        bottom          :0px;
+        background-color:#57789B;
+    }
+    .div_left {
+        list-style      :height 30px;
+        position        :absolute;
+        top             :60px;/*与上方head宽度一致*/
+        left            :0px;
+        width           :10%;
+        height          :100%;
+        background-color:#ececec;
+        text-align      :center;
+
+        float           :left;
+        font-size       :150%;
+        padding         :20px 0px 20px 0px;/*上内边距20，左右4，下内边距20*/
+
+    }  
+    ul.circle{list-style-type: circle;}
+    .div_mainblock{
+        position        :absolute;
+        top             :61px;
+        left            :10%;
+        height          :100%;
+        background-size :100% auto;
+        background      :#e6e3e3;
+        align-content   :center;
+    }
+    #pos{
+        align-self:"center";
+    }
+    #splitLine{
+        height    :1px;
+        border    :none;
+        border-top:1px solid #000000 ;
+    }
+    .table1{
+        margin          :0 auto;
+        border          :2px;
+        width           :50%;
+        text-align      :center;
+        border-style    :ridge;
+        background-color:#f3f3f3;
+    }
+    .table2,td1{
+        border          :2px;
+        font-size   :65%;
+    }
+    .table2{
+        margin          :0 auto;
+        width           :90%;
+        text-align      :left;
+        border-style    :ridge;
+        background-color:#f3f3f3;
+    }
+    .td1{
+        width           :50%;
+        text-align      :right;
+    }
