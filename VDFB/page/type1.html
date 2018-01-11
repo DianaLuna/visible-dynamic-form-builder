@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="vendor/css/vendor.css" />
+    <link rel="stylesheet" href="dist/formbuilder.css" />
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Le styles -->
@@ -15,7 +18,21 @@
             padding-top: 60px;
             padding-bottom: 40px;
         }
-      
+        .fb-main {
+            background-color: #fff;
+            border-radius: 5px;
+            min-height: 600px;
+        }
+
+        input[type=text] {
+            height: 26px;
+            margin-bottom: 3px;
+        }
+
+        select {
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
         .sidebar-nav{
             margin-bottom:50px;            
         }
@@ -47,10 +64,10 @@
             background-size: 60%;
             margin-bottom:40px;
             margin-right:80px;
-            cursor: pointer;
         }
         .holder1{
             background-image: url("mainpage/logo/formtype1.png");
+            
         }
 
         .holder2{
@@ -91,7 +108,7 @@
 
         .span9{
             margin-top:30px;
-            
+       
         }
         .sidebar-nav {
             padding: 9px 0;
@@ -102,8 +119,12 @@
             width:100px;
             margin-left: 20px;
             cursor: pointer;
+            
         }
-
+        .fb-main{
+            margin-left: 20px;
+        }
+      
          @media (max-width: 980px) {
         /* Enable use of floated navbar text */
             .navbar-text.pull-right {
@@ -150,6 +171,8 @@
             </div>
         </div>
 
+        
+
         <div class="container-fluid">
         <div class="row-fluid">
 
@@ -157,7 +180,7 @@
                 <div class="well sidebar-nav">
                     <table class="nav nav-list" >
                         <tr class="ch">
-                            <td class="pop" data-container="body" data-toggle="popover" data-placement="right" data-content="未设置">
+                            <td class="pop" data-html="true" data-container="body" data-toggle="popover" data-placement="right" data-content="未设置">
                                 文件                           
                             </td>
                         </tr>
@@ -210,35 +233,10 @@
 
 
             <div class="span9">
-                <div class="hero-unit">
+                <div class='fb-main'></div>
+                <script src="vendor/js/vendor.js"></script>
+                <script src="dist/formbuilder.js"></script>
                
-                    <a linehold>
-                        <a class="span3 holder holder1" href="type1.html" >
-                        
-                        </a>
-
-                        <a class="span3 holder holder2" href="type2.html">
-                        
-                        </a>
-
-                        <a class="span3 holder holder3" href="type3.html" >
-              
-                        </a>
-                    </a>
-                    <a linehold>
-                        <a class="span3 holder holder4" href="type4.html">
-                    
-                        </a>
-    
-                        <a class="span3 holder holder5" href="type5.html">
-                  
-                        </a>
-    
-                        <a class="span3 holder holder6" href="type6.html">
-                  
-                        </a>
-                    </a>        
-                </div>      
             </div>
         </div>
 
@@ -252,17 +250,57 @@
         </div>
 
 
+        <!-- Placed at the end of the document so the pages load faster -->
         <script>
             $(function (){
                 $("[data-toggle='popover']").popover();
-            });
-              
+            }); 
+            $(function(){
+                fb = new Formbuilder({
+                    selector: '.fb-main',
+                    bootstrapData: [
+                    {
+                        "label": "姓名",
+                        "field_type": "text",
+                        "required": true,
+                        "field_options": {},
+                        "cid": "c6"
+                    },
+                    {
+                        "label": "手机号码",
+                        "field_type": "phone",
+                        "required": true,
+                        "field_options": {
+                            
+                        },
+                        "cid": "c10"
+                    },
+                    {
+                        "label": "邮箱",
+                        "field_type": "email",
+                        "required": true,
+                        "field_options": {},
+                        "cid": "c14"
+                    },
 
-           
-            function ChangeURL(url){
-                 document.getElementById('span9').src=url;
-            }
-             
+                    {
+                        "label": "个人简介",
+                        "field_type": "paragraph",
+                        "required": false,
+                        "field_options": {
+                            
+                        },
+                        "cid": "c14"
+                    }
+                    ]
+                });
+                    
+                fb.on('save', function(payload){
+                    console.log(payload);
+                })
+            });
+        </script>
+
         </script>
         <script src="bootstrap-2.3.2/docs/assets/js/jquery.js"></script>
         <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-transition.js"></script>
