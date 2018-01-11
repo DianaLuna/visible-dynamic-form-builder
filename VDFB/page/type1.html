@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Dynamic Form Builder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="dist/formbuilder.css" />
     <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Le styles -->
     <link href="bootstrap-2.3.2/docs/assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
@@ -18,6 +19,7 @@
             padding-top: 60px;
             padding-bottom: 40px;
         }
+
         .fb-main {
             background-color: #fff;
             border-radius: 5px;
@@ -33,17 +35,19 @@
             margin-bottom: 5px;
             font-size: 40px;
         }
-        .sidebar-nav{
-            margin-bottom:50px;            
+
+        .sidebar-nav {
+            margin-bottom: 50px;
         }
-        .table2{
-            margin-left:30px;
-            line-height:40px;
+
+        .table2 {
+            margin-left: 30px;
+            line-height: 40px;
         }
-        
-        
-        .ch{
-            line-height:100px;
+
+
+        .ch {
+            line-height: 100px;
         }
 
         a {
@@ -51,90 +55,101 @@
             text-decoration: none;
         }
 
-        .hero-unit{
-            padding-left:140px;
-            padding-top:-20px;
-            height:550px;
+        .hero-unit {
+            padding-left: 140px;
+            padding-top: -20px;
+            height: 550px;
         }
 
-        .holder{
-            background-color:aliceblue;
+        .holder {
+            background-color: aliceblue;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 60%;
-            margin-bottom:40px;
-            margin-right:80px;
-        }
-        .holder1{
-            background-image: url("mainpage/logo/formtype1.png");
-            
+            margin-bottom: 40px;
+            margin-right: 80px;
         }
 
-        .holder2{
-            background-image: url("mainpage/logo/formtype2.png"); 
+        .holder1 {
+            background-image: url("mainpage/logo/formtype1.png");
+
         }
-    
-        .holder3{
+
+        .holder2 {
+            background-image: url("mainpage/logo/formtype2.png");
+        }
+
+        .holder3 {
             background-image: url("mainpage/logo/formtype3.png");
         }
 
-        .holder4{
+        .holder4 {
             background-image: url("mainpage/logo/formtype4.png");
         }
 
-        .holder5{
+        .holder5 {
             background-image: url("mainpage/logo/formtype5.png");
         }
 
-        .holder6{
+        .holder6 {
             background-image: url("mainpage/logo/formtype6.png");
         }
 
 
-        .span3{
-            width:260px;
-            height:260px;
+        .span3 {
+            width: 260px;
+            height: 260px;
         }
 
-        .span2{
-            margin-top:30px;
-            font-size:20px;
+        .span2 {
+            margin-top: 30px;
+            font-size: 20px;
         }
 
-        .Name{
+        .Name {
             text-align: center;
             font-style: oblique;
         }
 
-        .span9{
-            margin-top:30px;
-       
+        .span9 {
+            margin-top: 30px;
+
         }
+
         .sidebar-nav {
             padding: 9px 0;
         }
 
-        .pop{
+        .pop {
             float: left;
-            width:100px;
+            width: 100px;
             margin-left: 20px;
             cursor: pointer;
-            
+
         }
-        .fb-main{
+
+        #messages .fb-left {
+            margin-left: 30px;
+        }
+
+        #messages .fb-right {
+            margin-left: 400px;
+        }
+
+        .fb-main {
             margin-left: 20px;
         }
-      
-         @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
             .navbar-text.pull-right {
                 float: none;
-                padding-left: 5px; 
+                padding-left: 5px;
                 padding-right: 5px;
             }
         }
-        </style>
-        <link href="bootstrap-2.3.2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    </style>
+    <link href="bootstrap-2.3.2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
 
 
@@ -144,177 +159,161 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap-2.3.2/docs/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="bootstrap-2.3.2/docs/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="mainpage/logo/logo.png">
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="#"></a>
-                    <div class="nav-collapse collapse">
-                        <p class="navbar-text pull-right">
-                            Logged in as <a href="login.html" class="navbar-link">Username</a>
-                        </p>
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#"></a>
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+                        Logged in as
+                        <a href="login.html" class="navbar-link">Username</a>
+                    </p>
+                    <ul class="nav">
+                        <li role="presentation" class="active">
+                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                主页
+                            </a>
+                        </li>
+                        <li role="presentation" id="store">
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                模板存储
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                                未设置
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <!--/.nav-collapse -->
             </div>
         </div>
+    </div>
 
-        
 
-        <div class="container-fluid">
-        <div class="row-fluid">
 
-            <div class="span2">
-                <div class="well sidebar-nav">
-                    <table class="nav nav-list" >
-                        <tr class="ch">
-                            <td class="pop" data-html="true" data-container="body" data-toggle="popover" data-placement="right" data-content="未设置">
-                                文件                           
-                            </td>
-                        </tr>
-                       
 
-                        <tr class="ch">
-                            <td class="pop" data-container="body" data-toggle="popover" data-placement="right" data-content="未设置">
-                                表格
-                            </td>
-                        </tr>
-                        <tr class="ch">
-                            <td class="pop" onclick ="location.href='login.html'" >
-                                退出
-                            </td>   
-                        </tr>
-                    
-                    </table>
+
+
+
+
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="container-fluid">
+                <div class="row-fluid">
+
+                    <div class="span2">
+                        <div class="well sidebar-nav">
+                            <table class="nav nav-list">
+                                <tr class="ch">
+                                    <td class="pop" data-html="true" data-container="body" data-toggle="popover" data-placement="right" data-content="新建文件">
+                                        文件
+                                    </td>
+                                </tr>
+
+
+                                <tr class="ch">
+                                    <td class="pop" data-container="body" data-toggle="popover" data-placement="right" data-content="未设置">
+                                        表格
+                                    </td>
+                                </tr>
+                                <tr class="ch">
+                                    <td class="pop" onclick="location.href='index.html'">
+                                        退出
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+
+                        <hr id="splitLine" />
+
+                        <br/>
+                        <p class="Name">Mjoe </p>
+                        <br/>
+
+                        <hr id="splitLine" />
+
+                        <div class="well sidebar-nav">
+                            <table class="table2">
+                                <tr>
+                                    <td class="td1"> 工号：</td>
+                                    <td>123</td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"> 姓名：</td>
+                                    <td>Mjoe</td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"> 执行状态：</td>
+                                    <td>Available</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="span9">
+                        <div class='fb-main'></div>
+                        <script src="vendor/js/vendor.js"></script>
+                        <script src="dist/formbuilder.js"></script>
+
+                    </div>
                 </div>
+                <hr>
+                <footer>
+                    <p>&copy; Dynamic Form Builder</p>
+                </footer>
 
-            
-
-                <hr id = "splitLine" />
-
-                <br/>
-                <p class = "Name">Mjoe </p>
-                <br/>
-
-                <hr id = "splitLine" />
-
-                <div class="well sidebar-nav">
-                    <table class = "table2">
-                        <tr>
-                            <td class = "td1"> 工号：</td>
-                            <td>123</td>
-                        </tr>
-                        <tr>
-                            <td class = "td1"> 姓名：</td>
-                            <td>Mjoe</td>
-                        </tr>
-                        <tr>
-                            <td class = "td1"> 执行状态：</td>
-                            <td>Available</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="span9">
-                <div class='fb-main'></div>
-                <script src="vendor/js/vendor.js"></script>
-                <script src="dist/formbuilder.js"></script>
-               
             </div>
         </div>
-
-   
-        <hr>
-
-        <footer>
-            <p>&copy; Dynamic Form Builder</p>
-        </footer>
+        <div role="tabpanel" class="tab-pane" id="profile">
 
         </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <div id="me1">
+
+            </div>
+            <div id="me2">
+
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+    </div>
 
 
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script>
-            $(function (){
-                $("[data-toggle='popover']").popover();
-            }); 
-            $(function(){
-                fb = new Formbuilder({
-                    selector: '.fb-main',
-                    bootstrapData: [
-                    {
-                        "label": "姓名",
-                        "field_type": "text",
-                        "required": true,
-                        "field_options": {},
-                        "cid": "c6"
-                    },
-                    {
-                        "label": "手机号码",
-                        "field_type": "phone",
-                        "required": true,
-                        "field_options": {
-                            
-                        },
-                        "cid": "c10"
-                    },
-                    {
-                        "label": "邮箱",
-                        "field_type": "email",
-                        "required": true,
-                        "field_options": {},
-                        "cid": "c14"
-                    },
 
-                    {
-                        "label": "个人简介",
-                        "field_type": "paragraph",
-                        "required": false,
-                        "field_options": {
-                            
-                        },
-                        "cid": "c14"
-                    }
-                    ]
-                });
-                    
-                fb.on('save', function(payload){
-                    console.log(payload);
-                })
-            });
-        </script>
+    <!-- Placed at the end of the document so the pages load faster -->
 
-        </script>
-        <script src="bootstrap-2.3.2/docs/assets/js/jquery.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-transition.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-alert.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-modal.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-dropdown.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-scrollspy.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-tab.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-tooltip.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-popover.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-button.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-collapse.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-carousel.js"></script>
-        <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-typeahead.js"></script>
+    </script>
+    <script src="./type1.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/jquery.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-button.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap-2.3.2/docs/assets/js/bootstrap-typeahead.js"></script>
 
-    </body>
+
+</body>
+
 </html>
